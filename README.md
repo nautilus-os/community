@@ -2,7 +2,7 @@
 The official repository for the NautilusOS Community Hub. Home to community-made apps, games, and themes.
 
 ## What's in here?
-As mentioned above, apps, games, and themes made by people outside of the Nautilus organization are hosted here. All code has been run through by their respective developers and the NautilusOS team.
+As mentioned above, apps, games, and themes made by people outside of the Nautilus organization are hosted here. All code has been checked by their respective developers and the NautilusOS team.
 
 ## File Structure
 ```text
