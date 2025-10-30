@@ -105,6 +105,8 @@ App developers are appreciated by the team, the users, and everyone in between!
 ## Help
 If you need help, please go to [our help form](https://nautilus-os.netlify.app/help/) or contact the developers on discord.
 
-xor - `@_x8rr`
+xor (Community Manager) - `@_x8rr`
 
-<sup>Please keep in mind that not all developers are on this list, as not everyone wants to be DM'd with inquiries. Thank you.</sup>
+lane (Developer) - `@scammerseason`
+
+<sup>Please keep in mind that not all developers are on this list, as not everyone wants to be messaged with inquiries. Thank you.</sup>
