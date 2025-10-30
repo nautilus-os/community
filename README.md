@@ -34,58 +34,72 @@ As mentioned above, apps, games, and themes made by people outside of the Nautil
 ## For Developers
 Making an item for the store? Just follow the instructions below.
 
-### Making an app, game, or theme
-#### Step 1: Clone
-To get started, grab the files out of the repo. You can easily do this by running the following command:
-```
-git clone https://github.com/Nautilus-OS/community.git
-```
+## Making an app, game, or theme
 
-#### Step 2a: Start working
-There are different steps for each section, so please follow carefully.
+### Getting Started
+To start, create a new repository on your account, and name it whatever you want your app to be called.
 
-#### Step 2b: Making a theme
-To make a theme, it's fairly easy. First, navigate to `style.css` in the [main repository](https://github.com/Nautilus-OS/NautilusOS) and copy that file into the `themes/[create your author name]/[your project name]/files/` directory.
 
-Once you've done that, you can change anything you would like! To request fonts to be added, you can either use the `@import` statement in CSS, or [request a font be added to the head of the file.](https://nautilus-os.netlify.app/request/)
+In this repository, you will store your files.
 
-Finally, create a file called `info.json` with name, icon, and author entries.
+You can now continue to the next section!
 
-#### Step 2c: Making an app
-Making an app is a little bit more complicated, as there are two different kinds of apps.
+### Making a theme
+Making a theme is the simplest process.
 
-You can either make an app embedded into the Javascript, or add your app as a separate HTML file with your own styles and scripts.
+To start out, grab the base style over from https://github.com/nautilus-os/nautilusos/blob/main/style.css
 
-Simply put your HTML content inside your new HTML file if you're doing an embedded app, just make sure there's no imports in the head, because there is no head.
+Now copy the contents and paste it into your theme file, which should be named something like `[themename].css`.
 
-**Your app will not be supported offline if you decide to make it in another file!**
+Now, you can modify the styles inside!
 
-To request functions be added to the Javascript for embedded applications, fill out the request [here.](https://nautilus-os.netlify.app/request/)
+### Making an app
+A little bit more complicated than themes, but doable!
 
-When making a separate file application, create a new file inside of `apps/[make new author folder]/files/index.html`
+To get started, create a folder in your repository with the name of your app.
 
-Now once you're done with that, create an `appinfo.json` file, formatted as the following:
+Next, choose your type of application.
+
+#### HTML App
+HTML apps are stored in a different directory, have separate JS and CSS, and are not supported offline. Take this into heavy consideration when making an app.
+
+To make an HTML app, simply create a new file called `index.html` to contain all of your scripts, styles, and other content. These files are allowed to have heads and import external scripts, just make sure they aren't harmful. You can also put local CSS and JS files inside your project folder to be used in the HTML.
+
+#### Embedded App
+Embedded apps are apps that are typed into the JS, meaning their content is only created when an app launches, unlike how HTML apps are embedded using iframes. Embedded apps are supported by offline builds, but cannot import external scripts or styles. All styles must comply with the themes, meaning you might have to use built in classes and things like that. HTML apps are recommended for flexibility, but if you can work with the provided elements, go for it! Now, you can embed `<script>` tags, but using those are not guaranteed to work or run properly, and can run into errors, so we advise staying away. We also strongly ask that you do not include a head inside your HTML content.
+
+Anyway, you can start writing your app in a separate HTML file under your project folder, and we'll put it in the JS.
+
+### Getting it ready
+Now that you have your ready app, you can enter the pre-submit process.
+
+In your app directory (folder), create an appinfo.json file, with the following info:
 
 ```json
 [
-  "name": "Your app name here",
-  "icon": "fas fa-sun", // Example FontAwesome icon
-  "author": "Your name here"
+  {
+    "name": "",
+    "desc": "",
+    "icon": "fas fa-icon-here", // MUST USE FONTAWESOME SOLID (images coming soon)
+    "author": "",
+    "url": "" // not required for themes, we'll get to this in a later step!
+  }
 ]
 ```
 
-#### Step 2d: Making a game
-Refer to the steps above for app making.
+Now that you've filled out your appinfo.json, you can continue to the next step.
 
-#### Step 3: Deploy
-Once you are done with your app, clone the main repository and add in your app. Now initialize a fork, deploy it, and add it into your `info.json` file with the `url` entry.
+### Deploying your app for testing
+To deploy your app for testing, we request you put your app on Netlify or Vercel, as Nautilus runs on those two platforms, so we can best get results.
 
-#### Step 4: Submit
-Once you've verified that your code works in tandem with the other code in Nautilus, you're ready to add a pull request. Open a PR on this repository, appending either [APP], [GAME], or [THEME] to the start of the title and adding the respective tag to the PR. Include information about what your app does, what it's used for, etc. We'll check out your app, and eventually merge it into the main community repository.
+Grab your deployment URL and add that into the `url` slot in your appinfo.json file.
 
-If your work is not added, check your PR for any messages from maintainers! We'll help you make your app the best it can be.
+### Submitting
+Once you've gone through the whole process, you can finally submit your app! Open an issue, tag it with your content type (app, game, or theme), and fill out the required fields and checkboxes and stuff.
 
-### Thanks for submitting!
+We'll get back to you in about 1-3 days, if not in a few hours, and we'll reply with the next steps or things to change.
+
+## Thanks for contributing!
 App developers are appreciated by the team, the users, and everyone in between!
 
 ## Help
