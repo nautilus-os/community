@@ -49,7 +49,7 @@ To make a theme, it's fairly easy. First, navigate to `style.css` in the [main r
 
 Once you've done that, you can change anything you would like! To request fonts to be added, you can either use the `@import` statement in CSS, or [request a font be added to the head of the file.](https://nautilus-os.netlify.app/request/)
 
-Finally, create a file
+Finally, create a file called `info.json` with name, icon, and author entries.
 
 #### Step 2c: Making an app
 Making an app is a little bit more complicated, as there are two different kinds of apps.
