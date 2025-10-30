@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Startup Apps",
+        "desc": "Control whcih applications launch automatically on login with this convenient built-in app.",
+        "author": "Nautilus Labs and dinguschan",
+        "img": "fas fa-rocket",
+        "content": "/apps/nautilus-labs/startup-apps/content.txt",
+        "official": true,
+        "offline": true
+    },
+    {
+      "name": "Task Manager",
+      "desc": "Monitor and manage running applications and windows. View system statistics and close unresponsive apps with ease.",
+      "author": "Nautilus Labs and dinguschan",
+      "img": "fas fa-list-ul",
+      "content": "/apps/nautilus-labs/task-manager/content.txt",
+      "official": true,
+      "offline": true
+    },
+    {
+      "name": "Snap Manager",
+      "desc": "Add window snapping with animated previews. Customize layouts, assign shortcuts, and drag to see live guides.",
+      "author": "Nautilus Labs and lanefiedler",
+      "img": "fas fa-window-restore",
+      "content": "/apps/nautilus-labs/snap-manager/content.txt",
+      "official": true,
+      "offline": true
+    },
+    {
+      "name": "Ultraviolet",
+      "desc": "Modern proxy technology, now on NautilusOS. Explore the web with a whole new set of limitless possibilities.",
+      "author": "Nautilus Labs and hvtrs",
+      "img": "fas fa-globe",
+      "content": "/apps/nautilus-labs/uv/",
+      "official": true,
+      "offline": false
+    },
+    {
+      "name": "Helios",
+      "desc": "The classic CORS proxy you know and love, fit into Nautilus.",
+      "author": "Nautilus Labs and dinguschan",
+      "img": "fas fa-rocket",
+      "content": "/apps/nautilus-labs/helios/",
+      "official": true,
+      "offline": false
+    },
+    {
+      "name": "Visual Studio Code",
+      "desc": "VS Code is the developer's choice for text editing, coding, and everything in between. With VSC arriving to Nautilus, you can now code, edit, and more on the go.",
+      "author": "Microsoft",
+      "img": "fas fa-code",
+      "content": "/apps/microsoft/vsc/",
+      "official": false,
+      "offline": false
+    },
+    {
+      "name": "V86 Emulator",
+      "desc": "Run x86 operating systems and software inside NautilusOS. Experience virtualized computing with full system emulation.",
+      "author": "Nautilus Labs and lanefiedler",
+      "img": "fas fa-microchip",
+      "content": "/apps/nautilus-os/v86/content.txt",
+      "official": true,
+      "offline": true
+    }
+]

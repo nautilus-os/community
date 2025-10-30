@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Dark Theme",
+    "desc": "The default NautilusOS theme. Sleek dark interface with teal accents, perfect for extended use and reducing eye strain.",
+    "author": "Nautilus Labs and dinguschan",
+    "accent": "#3c6161",
+    "border": "#7dd3c0",
+    "headercolor": "#263b41",
+    "bg": "#0a0e1a",
+    "windowbg": "#101522",
+    "path": "/themes/nautilus-labs/dark.css",
+    "official": true,
+    "default": true
+  },
+  {
+    "name": "Light Theme",
+    "desc": "A bright and clean theme perfect for daytime use. Easy on the eyes with light backgrounds and dark text.",
+    "author": "Nautilus Labs and dinguschan",
+    "accent": "#c4d9fc",
+    "border": "#3b82f6",
+    "headercolor": "#f9fafb",
+    "bg": "#f5f5f5",
+    "windowbg": "#ffffff",
+    "path": "/themes/nautilus-labs/light.css",
+    "official": true
+  },
+  {
+    "name": "Golden Theme",
+    "desc": "Elegant golden accents with warm luxurious dark backgrounds. Perfect for a premium look.",
+    "author": "Nautilus Labs and lanefiedler",
+    "accent": "#655220",
+    "border": "#d4af37",
+    "headercolor": "#3f3318",
+    "bg": "#1a1410",
+    "windowbg": "#1a1410",
+    "path": "/themes/nautilus-labs/gold.css",
+    "official": true
+  },
+  {
+    "name": "Red Theme",
+    "desc": "Bold and vibrant red accents for those who want to stand out. Energy meets elegance.",
+    "author": "Nautilus Labs and lanefiedler",
+    "accent": "#702121",
+    "border": "#ef4444",
+    "headercolor": "#451616",
+    "bg": "#1a0a0a",
+    "windowbg": "#1a0a0a",
+    "path": "/themes/nautilus-labs/red.css",
+    "official": true
+  },
+  {
+    "name": "Blue Theme",
+    "desc": "Cool and calming blue tones. Professional and soothing for extended use.",
+    "author": "Nautilus Labs and lanefiedler",
+    "accent": "#1e3c72",
+    "border": "#3b82f6",
+    "headercolor": "#142546",
+    "bg": "#0a0e1a",
+    "windowbg": "#0a0e1a",
+    "path": "/themes/nautilus-labs/blue.css",
+    "official": true
+  },
+  {
+    "name": "Purple Theme",
+    "desc": "Deep shades combined with royal hues, crafted together for the perfect purple theme.",
+    "author": "Nautilus Labs and lanefiedler",
+    "accent": "#4c2873",
+    "border": "#a855f7",
+    "headercolor": "#2e1946",
+    "bg": "#0f0a1a",
+    "windowbg": "#0f0a1a",
+    "path": "/themes/nautilus-labs/purple.css",
+    "official": true
+  },
+  {
+    "name": "Green Theme",
+    "desc": "Rich shades of green with splashes of lime and seaweed, this is quite the exquisite theme.",
+    "author": "Nautilus Labs and lanefiedler",
+    "accent": "#145f2f",
+    "border": "#22c55e",
+    "headercolor": "#0f3c1f",
+    "bg": "#0a1a0f",
+    "windowbg": "#0a1a0f",
+    "path": "/themes/nautilus-labs/green.css",
+    "official": true
+  },
+  {
+    "name": "Liquid Glass",
+    "desc": "An Apple inspired theme with a beautiful translucent look. Not too clear, but just enough to look like eye candy.",
+    "author": "Nautilus Labs and hvtrs",
+    "accent": "#949494",
+    "border": "#777777",
+    "headercolor": "#7e7e7e",
+    "bg": "#404040",
+    "windowbg": "#616161",
+    "path": "/themes/nautilus-labs/lg.css",
+    "official": true
+  }
+]
