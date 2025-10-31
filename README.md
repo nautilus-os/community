@@ -103,7 +103,7 @@ We'll get back to you in about 1-3 days, if not in a few hours, and we'll reply 
 App developers are appreciated by the team, the users, and everyone in between!
 
 ## Help
-If you need help, please go to [our help form](https://nautilus-os.netlify.app/help/) or contact the developers on discord.
+If you need help, please go to [our help form]([https://nautilus-os.netlify.app/help/](https://nautilus-os.vercel.app/community/help.html)) or contact the developers on discord.
 
 xor (Community Manager) - `@_x8rr`
 
