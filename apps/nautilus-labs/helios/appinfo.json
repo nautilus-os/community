@@ -1,0 +1,9 @@
+{
+  "name": "Helios",
+  "desc": "The classic CORS proxy you know and love, fit into Nautilus.",
+  "author": "Nautilus Labs and dinguschan",
+  "img": "fas fa-rocket",
+  "content": "/apps/nautilus-labs/helios/",
+  "official": true,
+  "offline": false
+}

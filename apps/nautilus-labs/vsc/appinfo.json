@@ -1,0 +1,9 @@
+{
+  "name": "Visual Studio Code",
+  "desc": "VS Code is the developer's choice for text editing, coding, and everything in between. With VSC arriving to Nautilus, you can now code, edit, and more on the go.",
+  "author": "Microsoft",
+  "img": "fas fa-code",
+  "content": "/apps/microsoft/vsc/",
+  "official": false,
+  "offline": false
+}

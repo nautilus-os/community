@@ -1,0 +1,9 @@
+{
+  "name": "Nautilus Assistant",
+  "desc": "Your personal AI assistant powered by WebLLM. Get instant help with NautilusOS features, apps, settings, and more. Runs entirely in your browser with no server required!",
+  "author": "Nautilus Labs and lanefiedler",
+  "img": "fas fa-microchip",
+  "content": "/apps/nautilus-os/assistant/content.txt",
+  "official": true,
+  "offline": true
+}

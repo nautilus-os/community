@@ -1,0 +1,9 @@
+{
+  "name": "Startup Apps",
+  "desc": "Control whcih applications launch automatically on login with this convenient built-in app.",
+  "author": "Nautilus Labs and dinguschan",
+  "img": "fas fa-rocket",
+  "content": "/apps/nautilus-labs/startup-apps/content.txt",
+  "official": true,
+  "offline": true
+}

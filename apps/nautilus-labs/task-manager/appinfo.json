@@ -1,0 +1,9 @@
+{
+  "name": "Task Manager",
+  "desc": "Monitor and manage running applications and windows. View system statistics and close unresponsive apps with ease.",
+  "author": "Nautilus Labs and dinguschan",
+  "img": "fas fa-list-ul",
+  "content": "/apps/nautilus-labs/task-manager/content.txt",
+  "official": true,
+  "offline": true
+}

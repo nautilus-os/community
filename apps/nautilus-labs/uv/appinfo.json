@@ -1,0 +1,9 @@
+{
+  "name": "Ultraviolet",
+  "desc": "Modern proxy technology, now on NautilusOS. Explore the web with a whole new set of limitless possibilities.",
+  "author": "Nautilus Labs and hvtrs",
+  "img": "fas fa-globe",
+  "content": "/apps/nautilus-labs/uv/",
+  "official": true,
+  "offline": false
+}
