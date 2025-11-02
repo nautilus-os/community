@@ -1,0 +1,129 @@
+ensureSnapSettingsDefaults();
+  const enabledClass = snapSettings.enabled ? "active" : "";
+  const highlightColor =
+    (snapSettings.highlightColor || "#3b82f6").toUpperCase();
+  const layoutCards = snapSettings.layouts
+    .map((layout) => {
+      const triggerOptions = snapTriggerOptions
+        .map((option) => {
+          const selected = option.value === layout.trigger ? "selected" : "";
+          return `<option value="${option.value}" ${selected}>${option.label}</option>`;
+        })
+        .join("");
+      const layoutId = layout.id;
+      const hotkeyValue = layout.keybind
+        ? escapeHtml(layout.keybind)
+        : "Not Set";
+      const capturingClass = snapKeyCapture === layoutId ? " capturing" : "";
+      const removeDisabled = layout.builtin ? "disabled" : "";
+      const triggerDisabled = layout.builtin ? "disabled" : "";
+      return `
+            <div class="snap-layout-card" data-layout="${escapeHtml(layoutId)}">
+                <div class="snap-layout-header">
+                    <div class="snap-layout-title">
+                        <input type="text" value="${escapeHtml(
+        layout.name
+      )}" onblur="handleSnapLayoutField('${layoutId}', 'name', this.value)">
+                        <span>${getSnapTriggerLabel(layout.trigger)}</span>
+                    </div>
+                    <button class="snap-remove-btn" onclick="removeSnapLayout('${layoutId}')" ${removeDisabled}>
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+                <div class="snap-layout-grid">
+                    <div class="snap-field">
+                        <label>X (%)</label>
+                        <input type="number" min="0" max="100" step="1" value="${Math.round(layout.x * 100) / 100}" onchange="handleSnapLayoutField('${layoutId}', 'x', this.value)">
+                    </div>
+                    <div class="snap-field">
+                        <label>Y (%)</label>
+                        <input type="number" min="0" max="100" step="1" value="${Math.round(layout.y * 100) / 100}" onchange="handleSnapLayoutField('${layoutId}', 'y', this.value)">
+                    </div>
+                    <div class="snap-field">
+                        <label>Width (%)</label>
+                        <input type="number" min="10" max="100" step="1" value="${Math.round(layout.width * 100) / 100}" onchange="handleSnapLayoutField('${layoutId}', 'width', this.value)">
+                    </div>
+                    <div class="snap-field">
+                        <label>Height (%)</label>
+                        <input type="number" min="10" max="100" step="1" value="${Math.round(layout.height * 100) / 100}" onchange="handleSnapLayoutField('${layoutId}', 'height', this.value)">
+                    </div>
+                </div>
+                <div class="snap-layout-actions">
+                    <select onchange="handleSnapTriggerChange('${layoutId}', this.value)" ${triggerDisabled}>
+                        ${triggerOptions}
+                    </select>
+                    <div class="snap-hotkey-row">
+                        <input type="text" class="snap-hotkey-input${capturingClass}" value="${hotkeyValue}" readonly onfocus="beginSnapKeyCapture('${layoutId}', this)" onkeydown="captureSnapHotkey(event, '${layoutId}', this)" onblur="endSnapKeyCapture('${layoutId}', this)">
+                        <button class="snap-clear-btn" onclick="clearSnapHotkey('${layoutId}')" ${layout.keybind ? "" : "disabled"}>Clear</button>
+                    </div>
+                </div>
+            </div>
+        `;
+    })
+    .join("");
+
+  const triggerOptions = snapTriggerOptions
+    .map(
+      (option) =>
+        `<option value="${option.value}">${option.label}</option>`
+    )
+    .join("");
+
+  return `
+        <div class="snap-manager">
+            <div class="snap-section snap-section-header">
+                <div class="snap-section-title">
+                    <i class="fas fa-border-all"></i>
+                    <div>
+                        <h2>Window Snapping</h2>
+                        <p>Drag windows to the edges to snap them into place or use custom shortcuts.</p>
+                    </div>
+                </div>
+                <div class="toggle-switch ${enabledClass}" onclick="toggleSnapEnabled()"></div>
+            </div>
+            <div class="snap-section">
+                <div class="snap-section-row">
+                    <div>
+                        <h3>Highlight Color</h3>
+                        <p>Select the accent color used for snap previews.</p>
+                    </div>
+                    <div class="snap-color-picker">
+                        <input type="color" value="${highlightColor}" onchange="updateSnapHighlightColor(this.value)">
+                        <span>${highlightColor}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="snap-section">
+                <div class="snap-section-heading">
+                    <h3>Layouts</h3>
+                    <p>Adjust existing snap zones or create new layouts.</p>
+                </div>
+                <div class="snap-layout-list">
+                    ${layoutCards || '<div class="snap-empty">No layouts configured.</div>'}
+                </div>
+            </div>
+            <div class="snap-section">
+                <div class="snap-section-heading">
+                    <h3>Create Layout</h3>
+                    <p>Design a custom layout and assign a shortcut.</p>
+                </div>
+                <div class="snap-add-grid">
+                    <input type="text" id="snapNewName" placeholder="Name">
+                    <input type="number" id="snapNewX" placeholder="X (%)" min="0" max="100" value="0">
+                    <input type="number" id="snapNewY" placeholder="Y (%)" min="0" max="100" value="0">
+                    <input type="number" id="snapNewWidth" placeholder="Width (%)" min="10" max="100" value="50">
+                    <input type="number" id="snapNewHeight" placeholder="Height (%)" min="10" max="100" value="50">
+                    <select id="snapNewTrigger">
+                        ${triggerOptions}
+                    </select>
+                    <div class="snap-hotkey-row">
+                        <input type="text" id="snapNewHotkey" class="snap-hotkey-input" placeholder="Press shortcut" readonly onfocus="beginNewSnapKeyCapture(this)" onkeydown="captureNewSnapHotkey(event, this)" onblur="endNewSnapKeyCapture(this)">
+                        <button class="snap-clear-btn" onclick="clearNewSnapHotkey()">Clear</button>
+                    </div>
+                    <button class="snap-add-btn" onclick="addSnapLayoutFromForm()">
+                        <i class="fas fa-plus"></i> Add Layout
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;

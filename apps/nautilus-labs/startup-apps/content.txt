@@ -1,0 +1,11 @@
+<div class="startup-manager">
+                  <div class="startup-section">
+                      <h3>
+<i class="fas fa-rocket"/>&nbsp;Startup Applications</h3>
+                      <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                          Select which applications should automatically open when you log in.
+                      </p>
+                      ${itemsHtml}
+                      ${whatsNewHtml}
+                  </div>
+              </div>

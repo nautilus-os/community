@@ -1,0 +1,9 @@
+{
+  "name": "V86 Emulator",
+  "desc": "Run x86 operating systems and software inside NautilusOS. Experience virtualized computing with full system emulation.",
+  "author": "Nautilus Labs and lanefiedler",
+  "img": "fas fa-microchip",
+  "content": "/apps/nautilus-os/v86/content.txt",
+  "official": true,
+  "offline": true
+}

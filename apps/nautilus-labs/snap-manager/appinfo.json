@@ -1,0 +1,9 @@
+{
+  "name": "Snap Manager",
+  "desc": "Add window snapping with animated previews. Customize layouts, assign shortcuts, and drag to see live guides.",
+  "author": "Nautilus Labs and lanefiedler",
+  "img": "fas fa-window-restore",
+  "content": "/apps/nautilus-labs/snap-manager/content.txt",
+  "official": true,
+  "offline": true
+}
