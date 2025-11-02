@@ -7,5 +7,32 @@
     "content": "/games/nautilus-labs/snake/content.txt",
     "official": true,
     "offline": true
+  },
+  {
+    "name": "2048",
+    "desc": "Slide tiles to combine numbers and reach 2048! An addictive puzzle game that's easy to learn but hard to master.",
+    "author": "Nautilus Labs and dinguschan",
+    "img": "fas fa-snake",
+    "content": "/games/nautilus-labs/2048/content.txt",
+    "official": true,
+    "offline": true
+  },
+  {
+    "name": "Tic Tac Toe",
+    "desc": "Classic Tic-Tac-Toe against an AI opponent, Can you outsmart the computer and get three in a row?",
+    "author": "Nautilus Labs and dinguschan",
+    "img": "fas fa-snake",
+    "content": "/games/nautilus-labs/tictactoe/content.txt",
+    "official": true,
+    "offline": true
+  },
+  {
+    "name": "AI Snake Learning",
+    "desc": "Train an AI neural network to play Snake using Deep Q-Learning. Watch it learn and improve with GPU acceleration, customizable concurrency, game speed, and training speed controls.",
+    "author": "Nautilus Labs and lanefiedler",
+    "img": "fas fa-brain",
+    "content": "/games/nautilus-labs/aisnake/content.txt",
+    "official": true,
+    "offline": true
   }
 ]

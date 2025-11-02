@@ -1,0 +1,30 @@
+<div class="snake-game" id="snakeGameContainer" style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-primary); padding: 20px; gap: 40px;">
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="text-align: center;">
+              <h2 style="color: var(--accent); margin: 0 0 10px 0; font-size: 48px; font-weight: bold; font-family: fontb;">Snake</h2>
+              <div style="color: var(--text-secondary); font-size: 14px; margin-bottom: 15px;">Eat food and grow!</div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px; background: rgba(30, 35, 48, 0.6); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
+              <div style="text-align: center;">
+                <div style="color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Score</div>
+                <div id="snakeScore" style="color: var(--accent); font-size: 32px; font-weight: bold; font-family: fontb;">0</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">High Score</div>
+                <div id="snakeHighScore" style="color: var(--accent); font-size: 32px; font-weight: bold; font-family: fontb;">0</div>
+              </div>
+              <button id="snakeStartBtn" class="editor-btn" onclick="startSnakeGame()" style="background: var(--accent); color: var(--bg-primary); border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-family: fontb;">Start Game</button>
+              
+              <div style="color: var(--text-secondary); font-size: 11px; text-align: center; line-height: 1.6; margin-top: 10px; padding-top: 15px; border-top: 1px solid var(--border);">
+                <div style="margin-bottom: 8px;">
+<strong>Controls:</strong></div>
+                <div>Arrow Keys or WASD</div>
+                <div style="margin-top: 8px;">SPACE: Pause/Resume</div>
+                <div>R: Restart</div>
+              </div>
+            </div>
+          </div>
+          
+          <canvas id="snakeCanvas" width="400" height="400" style="background: var(--bg-secondary); border: 2px solid var(--border); border-radius: 8px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);"></canvas>
+        </div>

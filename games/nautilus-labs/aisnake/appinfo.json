@@ -1,0 +1,9 @@
+{
+  "name": "AI Snake Learning",
+  "desc": "Train an AI neural network to play Snake using Deep Q-Learning. Watch it learn and improve with GPU acceleration, customizable concurrency, game speed, and training speed controls.",
+  "author": "Nautilus Labs and lanefiedler",
+  "img": "fas fa-brain",
+  "content": "/games/nautilus-labs/aisnake/content.txt",
+  "official": true,
+  "offline": true
+}

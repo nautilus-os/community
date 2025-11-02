@@ -1,0 +1,26 @@
+<div style="display: flex; align-items: center; justify-content: center; height: 100%; background: var(--bg-primary); padding: 20px; gap: 40px;">
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="text-align: center;">
+              <h2 style="color: var(--accent); margin: 0 0 10px 0; font-size: 36px; font-weight: bold; font-family: fontb;">Tic-Tac-Toe</h2>
+              <div id="tttStatus" style="color: var(--text-primary); font-size: 16px; margin-bottom: 15px; font-weight: 500;">Your turn (X)</div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px; background: rgba(30, 35, 48, 0.6); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
+              <div style="text-align: center;">
+                <div style="color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Wins</div>
+                <div id="tttWins" style="color: var(--success-green); font-size: 28px; font-weight: bold; font-family: fontb;">0</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Losses</div>
+                <div id="tttLosses" style="color: var(--error-red); font-size: 28px; font-weight: bold; font-family: fontb;">0</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Draws</div>
+                <div id="tttDraws" style="color: var(--text-secondary); font-size: 28px; font-weight: bold; font-family: fontb;">0</div>
+              </div>
+              <button id="tttResetBtn" class="editor-btn" onclick="startTicTacToe()" style="background: var(--accent); color: var(--bg-primary); border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-family: fontb; margin-top: 10px;">New Game</button>
+            </div>
+          </div>
+          
+          <div id="tttBoard" style="display: grid; grid-template-columns: repeat(3, 120px); gap: 10px;"></div>
+        </div>
