@@ -1,0 +1,9 @@
+{
+  "name": "Snake",
+  "desc": "A classic snake game. Eat food, grow longer, and try to beat your high score without hitting the walls or yourself!",
+  "author": "Nautilus Labs and lanefiedler",
+  "img": "fas fa-snake",
+  "content": "/games/nautilus-labs/snake/content.txt",
+  "official": true,
+  "offline": true
+}

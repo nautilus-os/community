@@ -1,9 +1,0 @@
-[
-    {
-        "name": "Example App",
-        "desc": "This is an example app to show how to make something for the store.",
-        "icon": "fas fa-image",
-        "author": "Nautilus Labs",
-        "url": "https://nautilus-os.netlify.app/"
-    }
-]
