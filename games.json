@@ -34,5 +34,14 @@
     "content": "/games/nautilus-labs/aisnake/content.txt",
     "official": true,
     "offline": true
+  },
+  {
+    "name": "Minecraft",
+    "desc": "A block-building sandbox where you mine resources, craft tools, and survive in a limitless procedural world.",
+    "author": "Nautilus Labs",
+    "img": "fas fa-cube",
+    "content": "/games/blayze-labs/minecraft/content.txt",
+    "official": true,
+    "offline": false
   }
 ]
