@@ -1,9 +1,0 @@
-{
-  "name": "Scramjet",
-  "desc": "The experimental interception web proxy is now on your favorite web operating system for better browsing.",
-  "author": "Nautilus Labs and x8r",
-  "img": "fas fa-globe",
-  "content": "/apps/nautilus-labs/uv/content.txt",
-  "official": true,
-  "offline": false
-}
