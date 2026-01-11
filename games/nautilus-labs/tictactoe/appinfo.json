@@ -2,7 +2,7 @@
   "name": "Tic Tac Toe",
   "desc": "Classic Tic-Tac-Toe against an AI opponent, Can you outsmart the computer and get three in a row?",
   "author": "Nautilus Labs and dinguschan",
-  "img": "fas fa-snake",
+  "img": "fa-solid fa-circle",
   "content": "/games/nautilus-labs/tictactoe/content.txt",
   "official": true,
   "offline": true
