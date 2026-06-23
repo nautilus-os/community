@@ -107,7 +107,7 @@ If you need help, please go to [our help form]([https://nautilus-os.netlify.app/
 
 dinguschan (Developer) - `@toaster.fucker`
 
-xor (Community Manager) - `@_x8rr`
+xor (Community Manager) - `@4pgx`
 
 lane (Developer) - `@scammerseason`
 
